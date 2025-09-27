@@ -1,0 +1,24 @@
+.profile_pic 
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.container
+{
+    /* border: 2px solid white; */
+    padding: 10px 20px;
+}
+
+.acc
+{
+    width: 30vw;
+}
+
+.about
+{
+    width: 60vw;
+}

@@ -2,7 +2,7 @@
   width: 95.5vw;
   height: 90px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 2px solid rgb(250, 129, 250);
   backdrop-filter: blur(15px);
   border-radius: 5px;
   padding: 0 10px 0 10px;
@@ -12,18 +12,19 @@
   top: 10px;
 }
 
-.navbar-right-left {
-  gap: 5px;
-}
-
 #learnHub {
-  font-family: 'Caprasimo', sans-serif;
   font-size: 60px;
+  font-family: 'Caprasimo', sans-serif;
   position: relative;
   z-index: 10;
+}
+
+.navbar-right-left {
+  gap: 5px;
 }
 
 .navbar-right {
   gap: 10px;
   max-height: 70px;
+  text-decoration: underline;
 }

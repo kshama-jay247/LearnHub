@@ -34,8 +34,7 @@ function App() {
                 </Route>
               </Routes>
             </Router>
-            <SignInButton />
-          </SignedOut>
+          </SignedOut>       
         </header>
     </>
   )

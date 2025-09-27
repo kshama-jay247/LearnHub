@@ -1,0 +1,68 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.comm_container {
+    padding: 5px;
+    max-height: 80vh;
+    min-height: 80vh;
+}
+
+.sidebar {
+    width: 25vw;
+    padding: 25px 0;
+}
+
+.main {
+    width: 70vw;
+}
+
+.options {
+    width: 95%;
+    border-radius: 10px;
+    padding: 3px 7px;
+    height: 60px;
+    background: rgb(167, 48, 185);
+}
+
+.options:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background: rgb(201, 73, 219);
+}
+
+.trends {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 25px;
+    background: rgba(185, 75, 218, 0.332);
+}
+
+.trends:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background: rgba(201, 73, 219, 0.532);
+}
+
+.comms_cont {
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+.comms {
+    height: 250px;
+    width: 330px;
+    border-radius: 10px;
+    background: rgba(185, 75, 218, 0.332);
+}
+
+.comms:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}

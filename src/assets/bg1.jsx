@@ -1,13 +1,12 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import '../Pages Styling/Landing_page.css';
+import { SignedIn, SignedOut, SignInButton, UserButton, SignUpButton } from '@clerk/clerk-react';
 import SplitText from "./SplitText";
 
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
 };
-
-
 
 export default function LiquidEther({
   mouseForce = 20,
@@ -1149,22 +1148,31 @@ export default function LiquidEther({
   ]);
 
   return <div ref={mountRef} className={`liquid-ether-container ${className || ''}`} style={style} >
-     <div className="overlay-text">
+      <div className='flex flex-row justify-between w-full px-15 py-3 nav'>
+        <span className='Logo'>LearnHub</span>
+        <SignInButton className='login'>Login</SignInButton>
+      </div>
+    <div className="flex flex-col overlay-text items-center justify-center gap-5">
       <SplitText
-  text="LearnHub"
-  className="text-2xl font-semibold "
-  delay={100}
-  duration={0.6}
-  ease="power3.out"
-  splitType="chars"
-  from={{ opacity: 0, y: 40 }}
-  to={{ opacity: 1, y: 0 }}
-  threshold={0.1}
-  rootMargin="-100px"
-  textAlign="center"
-  onLetterAnimationComplete={handleAnimationComplete}
-/>
-    <p className='mt-0'>learn together anywhere</p>
+        text="Learn Together, Anywhere"
+        className="text-7xl font-semibold text-left"
+        delay={100}
+        duration={0.6}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        textAlign="center"
+        onLetterAnimationComplete={handleAnimationComplete}
+      />
+      <p className='mt-0 text-2xl font-light italic'>Find learning partners, mentors, and peers near you or online</p>
+      <div>
+        <SignUpButton>
+          <button class="get_started">Get Started</button>
+        </SignUpButton>
+      </div>
     </div>
   </div>;
 }

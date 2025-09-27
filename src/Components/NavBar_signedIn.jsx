@@ -5,7 +5,7 @@ export function Navbar_SignedIn() {
     return (
         <>
             <div className="navbar flex items-center">
-                <h1 className="heading" id='learnhub'>LearnHub</h1>
+                <p id='learnhub'>LearnHub</p>
                 <div className="navbar-right flex items-center">
                     <div className="navbar-right-left flex items-center">
                         <Link to="/">
