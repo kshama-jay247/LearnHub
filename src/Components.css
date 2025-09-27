@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .navbar {
   width: 95.5vw;
   height: 90px;
@@ -5,18 +7,30 @@
   border: 2px solid rgb(250, 129, 250);
   backdrop-filter: blur(15px);
   border-radius: 5px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 25px;
   margin: 15px auto;
   justify-content: space-between;
   position: sticky;
   top: 10px;
 }
 
-#learnHub {
-  font-size: 60px;
-  font-family: 'Caprasimo', sans-serif;
+.learnhub {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   z-index: 10;
+}
+
+.nav_btn:hover {
+  cursor: pointer;
+}
+
+.nav_btn_text {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .navbar-right-left {

@@ -15,7 +15,7 @@ export function Profile() {
         <>
             <div className='flex flex-col gap-10 justify-center items-center p-5'>
                 <div className='flex flex-row gap-10'>
-                    <div className="flex flex-col gap-5 container acc">
+                    <div className="flex flex-col gap-5 profile_container acc">
                         <p clasName=''>Account Details</p>
                         <img className="profile_pic" src={user.imageUrl} alt="Profile" />
                         <div>
@@ -40,7 +40,7 @@ export function Profile() {
                             <span className="profile-main-details" id="email">{user.emailAddresses[0]?.emailAddress}</span>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-5 container about'>
+                    <div className='flex flex-col gap-5 profile_container about'>
                         <div>
                             Streak count
                         </div>

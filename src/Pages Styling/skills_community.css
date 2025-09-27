@@ -14,8 +14,8 @@
 }
 
 .sidebar {
-    width: 25vw;
-    padding: 25px 0;
+    width: 18vw;
+    padding: 30px 0;
 }
 
 .main {
@@ -63,6 +63,16 @@
 }
 
 .comms:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.add_comm {
+    background: rgb(167, 48, 185);
+    margin-top: 5px;;
+}
+
+.add_comm:hover {
     transform: scale(1.02);
     cursor: pointer;
 }

@@ -1,4 +1,4 @@
-import { Navbar_SignedIn } from './Components/NavBar_signedIn'
+import { Navbar_SignedIn } from './Components/NavBar_SignedIn'
 import {Outlet} from 'react-router-dom'
 
 export function Layout_SignedIn() {

@@ -1,0 +1,25 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.container {
+    /* border: 2px solid white; */
+    width: 45%;
+    height: 80vh;
+    font-size: x-large;
+    font-weight: 700;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.my_skilljams_card {
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    background: rgba(185, 75, 218, 0.332);
+}
