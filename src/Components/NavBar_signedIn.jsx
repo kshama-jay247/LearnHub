@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
 import '../Components.css'
-import { ThemeToggle } from './theme_toggle'
-import { UserBtn } from './userBtn'
 
 export function Navbar_SignedIn() {
     return (
@@ -11,20 +9,19 @@ export function Navbar_SignedIn() {
                 <div className="navbar-right flex items-center">
                     <div className="navbar-right-left flex items-center">
                         <Link to="/">
-                            <button>Home</button>
+                            <button className='p-4 mx-2'>Home</button>
                         </Link>
                         <Link to="/profile">
-                            <button>Profile</button>
+                            <button className='p-4 mx-2'>Profile</button>
                         </Link>
-                        <Link to="/profile">
-                            <button>Profile</button>
+                        <Link to="/skills_community">
+                            <button className='p-4 mx-2'>Community</button>
                         </Link>
-                        <Link to="/problems">
-                            <button>Problems</button>
+                        <Link to="/my_skilljams">
+                            <button className='p-4 mx-2'>My SkillJams</button>
                         </Link>
                     </div>
                     <div className="navbar-right-right flex items-center">
-                        <UserBtn />
                     </div>
                 </div>
             </div>
