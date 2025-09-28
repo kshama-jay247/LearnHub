@@ -7,6 +7,8 @@ import { Skills_Community } from './Pages/skills_community';
 import { My_SkillJams } from './Pages/my_skilljams';
 import { Layout_SignedIn } from './Layout_SignedIN';
 import { Home } from './Pages/Home';
+import { Listofskills } from './Pages/listOfSkills';
+import { ChatWithBot } from './Pages/ChatWithBot';
 import './App.css'
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
                   <Route path='/profile' element={<Profile />} />
                   <Route path='/skills_community' element={< Skills_Community />} />
                   <Route path='/my_skilljams' element={<My_SkillJams />} />
+                  <Route path='/listofskills' element={<Listofskills />} /> 
+                  <Route path='/ChatWithBot' element={<ChatWithBot />} /> 
                 </Route>
               </Routes>
             </Router>
