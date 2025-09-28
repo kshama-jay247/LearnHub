@@ -5,7 +5,7 @@ import { Profile } from './Pages/profile'
 import { LandingPage } from './Pages/Landing_page'
 import { Skills_Community } from './Pages/skills_community';
 import { My_SkillJams } from './Pages/my_skilljams';
-import { Layout_SignedIn } from '../Layout_SignedIn';
+import { Layout_SignedIn } from '../Layout_SignedIN';
 import { Home } from './Pages/Home';
 import { Listofskills } from './Pages/listOfSkills';
 import { ChatWithBot } from './Pages/ChatWithBot';
