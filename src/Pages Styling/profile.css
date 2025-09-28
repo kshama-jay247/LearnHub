@@ -1,3 +1,12 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .profile_pic 
 {
     width: 170px;
@@ -39,11 +48,11 @@
     border-radius: 10px;
     width: 90%;
     border: 2px solid rgba(201, 73, 219, 0.532);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 200;
     padding: 10px;
     min-height: 50px;
-    min-width: 90%;;
+    min-width: 50vw;
 }
 
 .about_btn {
@@ -51,6 +60,20 @@
     min-width: 50px;
     border-radius: 10px;
     border: 2px solid rgba(201, 73, 219, 0.532);
+}
+
+.about_block {
+    border-radius: 10px;
+    width: 90%;
+    border: 2px solid rgba(201, 73, 219, 0.532);
+    font-size: 15px;
+    font-weight: 200;
+    padding: 10px;
+    min-height: 50px;
+    height: 40%;
+    overflow: auto;
+    position: absolute;
+    left: 5%;
 }
 
 .about_btn:hover {

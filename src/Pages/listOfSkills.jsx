@@ -1,5 +1,5 @@
 import React from "react";
-import '../Pages Styling/lisTofskills.css'
+import '../Pages Styling/listOfskills.css'
 import { Link } from "react-router-dom";
 
 export function Listofskills() {

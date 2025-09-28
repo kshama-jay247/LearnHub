@@ -12,6 +12,26 @@ export function Profile() {
         return <div>Loading...</div>;
     }
 
+    const [aboutInput, setAboutInput] = useState("");
+    const [aboutBlocks, setAboutBlocks] = useState([]);
+
+    const handleEdit = () => {
+        if (aboutInput.trim() !== "") {
+            if (aboutBlocks.length === 0) {
+                // If no blocks exist, add the first input
+                setAboutBlocks([aboutInput]);
+            } else {
+                // Otherwise replace last block with new input
+                setAboutBlocks([
+                    ...aboutBlocks.slice(0, aboutBlocks.length - 1),
+                    aboutInput,
+                ]);
+            }
+            setAboutInput("");
+        }
+    };
+
+
     return (
         <>
             <div className='flex flex-col gap-10 justify-center items-center p-5'>
@@ -46,13 +66,25 @@ export function Profile() {
                             About
                         </div>
                         <div className="flex flex-row gap-2 justify-around">
-                        <input
-                            type="text"
-                            placeholder="Add to your About"
-                            className="about_input w-full px-4 py-2 rounded-lg border border-gray-400 focus:border-purple-600 focus:ring-2 focus:ring-purple-300 bg-gray-800 text-white placeholder-gray-400 transition duration-200 outline-none shadow-md"
+                            <input
+                                type="text"
+                                placeholder="Your About"
+                                value={aboutInput}
+                                onChange={(e) => setAboutInput(e.target.value)}
+                                className="about_input w-full px-4 py-2 rounded-lg border border-gray-400 focus:border-purple-600 focus:ring-2 focus:ring-purple-300 bg-gray-800 text-white placeholder-gray-400 transition duration-200 outline-none shadow-md"
                             />
-                            <button className="about_btn flex justify-center items-center">Edit</button>
-                            </div>
+                            <button className="about_btn flex justify-center items-center" onClick={handleEdit}>Edit</button>
+                        </div>
+                        <div className="w-full max-w-lg flex flex-col gap-2">
+                            {aboutBlocks.map((item, idx) => (
+                                <div
+                                    key={idx}
+                                    className="about_block no-scrollbar"
+                                >
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
                         <div className="signout_btn">
                             <SignOutButton></SignOutButton>
                         </div>

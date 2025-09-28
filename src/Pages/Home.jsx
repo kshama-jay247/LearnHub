@@ -1,6 +1,7 @@
 import { ChatBot } from "../assets/ChatBot"
 import '../Pages Styling/Home.css'
 import { BrowserRouter as Router, Routes, Route, useNavigate, Link } from "react-router-dom";
+// import requests
 
 export function Home() {
     const navigate = useNavigate();
@@ -8,6 +9,45 @@ export function Home() {
     const handleClick = () => {
         navigate("/listOfSkills");
     };
+
+    // response = requests.get('https://sri-2-e0x7.onrender.com/category/1')
+    // data = response.json()
+    // print(data)
+
+    // const fetchCategoryData = async (categoryId) => {
+    //     try {
+    //         const response = await fetch(`https://sri-2-e0x7.onrender.com/category/${categoryId}`);
+    //         const data = await response.json();
+    //         console.log(`Category ${categoryId} data:`, data);
+    //         return data;
+    //     } catch (error) {
+    //         console.error(`Error fetching category ${categoryId}:`, error);
+    //         return null;
+    //     }
+    // };
+
+    // useEffect(() => {
+    //     // Get data passed from Home component
+    //     const { category, skills: uniqueSkills } = location.state || {};
+
+    //     if (category && uniqueSkills) {
+    //         console.log('Received category:', category);
+    //         console.log('Received skills:', uniqueSkills);
+
+    //         setCategoryInfo({
+    //             id: category.category_id,
+    //             name: category.category_name,
+    //             description: category.description
+    //         });
+
+    //         setSkills(uniqueSkills);
+    //         setLoading(false);
+    //     } else {
+    //         // If no data received, redirect back to home
+    //         console.log('No data received, redirecting to home');
+    //         navigate('/');
+    //     }
+    // }, [location.state, navigate]);
 
     return (
         <>
